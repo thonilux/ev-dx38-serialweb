@@ -1,0 +1,56 @@
+<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="SiteType" value="toc">
+  <param name="Image Width" value="16">
+  <param name="Window Styles" value="0x800002">
+  <param name="ExWindow Styles" value="0x100">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="RACE">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="What's new">
+      <param name="Local" value="First_Topic.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="How to start a project">
+      <param name="Local" value="How_to_start_a_project.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="The Project Info">
+      <param name="Local" value="The_Project_Info.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="How to use old RACE 1.xx/2.xx files with RACE 3.xx">
+      <param name="Local" value="How_to_use_old_RACE_1.xx_2.xx_files_with_RACE_3.xx.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Configuring the COM port">
+      <param name="Local" value="Configuring_the_COM_port.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Going online">
+      <param name="Local" value="Going_online.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Setup Mode and Live Mode">
+      <param name="Local" value="Setup_Mode_and_Live_Mode.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Using the Grouping Feature">
+      <param name="Local" value="Using_the_Grouping_Feature.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Saving a project">
+      <param name="Local" value="Saving_a_project.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Updating the firmware in one or more Dx38 units">
+      <param name="Local" value="Updating_the_firmware_in_one_or_more_DSP244_units.htm">
+    </object>
+    </ul>
+</ul>
+</html>

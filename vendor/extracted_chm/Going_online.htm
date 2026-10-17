@@ -1,0 +1,141 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<!--(==============================================================)-->
+<!--(Document created with RoboEditor. )============================-->
+<!--(==============================================================)-->
+
+<head>
+
+<title>Going online</title>
+
+<!--(Meta)==========================================================-->
+
+<meta http-equiv=content-type content="text/html; charset=windows-1252">
+<meta name=generator content="RoboHELP by eHelp Corporation - www.ehelp.com">
+<meta name=generator-major-version content=0.1>
+<meta name=generator-minor-version content=1>
+<meta name=filetype content=kadov>
+<meta name=filetype-version content=1>
+<meta name=page-count content=1>
+<meta name=layout-height content=1607>
+<meta name=layout-width content=1222>
+<meta name=x-ignored-words content="Readme;readme;Crossmax;netscan;button(s;device(s;os;CrossMax;COM;Ids;Dev;xxxxxx;Grp">
+
+
+<!--(Links)=========================================================-->
+
+<link rel="StyleSheet" href="IRIS.CSS">
+
+
+
+</head>
+
+<!--(Body)==========================================================-->
+
+
+<body>
+
+<h2>Going online</h2>
+
+<p>Going online via RS-232 or MIDI is described in the Readme file. Going 
+ online via RS-485 is a little bit different. To do so, make all connections 
+ and settings as described in the chapters 1-4 of the Readme file. </p>
+
+<p>There are two ways for going online. The first way is to create a project 
+ in RACE consisting of one or more Dx38 devices. When going online project 
+ data is always written to the real world devices. The second way is to 
+ go online without project. RACE will create a project and add Dx38 devices 
+ found via RS-485 into the project automatically.</p>
+
+<h3>Going online with a configured project</h3>
+
+<p>Make sure that you have the same number of devices in your project as 
+ are really connected via RS-485. Also check, that the Device Ids of the 
+ devices match to those on your PC-screen. Then choose <span style="font-style: italic;">Remote 
+ </span>&gt; <span style="font-style: italic;">RS-485 Remote</span>. </p>
+
+<p>RACE performs a netscan and searches for all connected devices. A window 
+ opens with a table in it. On the left column of the table you can see 
+ your PC devices with their Device Ids. On the right side, RACE lists all 
+ devices that it finds during the netscan. If a found device has the same 
+ device ID than that on the PC, there will be a green checkmark, if not 
+ there will be a red cross or a blue question-mark ( for example, if you 
+ have 4 devices in RS-485 network and 2 devices in your current project 
+ on PC, 2 devices will be marked with the blue question-mark). RACE can 
+ only stay online when there are no red checkmarks. </p>
+
+<p>If RACE successfully found all devices, you will be asked if the current 
+ data in the project should be really written to the real world units.</p>
+
+<p><img src="pics/GoingOnlineWrite.png" style="border: none;
+				width: 293px;
+				height: 309px;
+				border-style: none;
+				border-style: none;" width="293" height="309" border="0"></p>
+
+<p>If you choose OK, all the settings (including the program) of <!--kadov_tag{{<spaces>}}-->&nbsp;<!--kadov_tag{{</spaces>}}-->the 
+ PC devices are sent to the corresponding Dx38 devices. If you choose <span 
+ style="font-style: italic;">Cancel</span> RACE will stay off-line.</p>
+
+<p>Being online, RACE can identify it’s corresponding Dx38 devices, by 
+ clicking into the virtual LCD-Display on the PC screen. </p>
+
+<ul style="list-style: disc;"
+	type=disc>
+	
+	<li class=kadov-p><p>Clicking on the line “Dev: xxxxxx” causes the 
+ corresponding Dx38 device to light up all it’s LEDs.</p></li>
+	
+	<li class=kadov-p><p>Clicking on the line “Grp: xxxxxx” causes all 
+ corresponding Dx38 devices (i.e. all members of that group) to light up 
+ their LEDs.</p></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3>Going online without a project</h3>
+
+<p>To control an existing PA system select <span style="font-style: italic;">Remote 
+ </span>&gt; <span style="font-style: italic;">RS-485 Remote </span>after 
+ starting RACE. RACE performs a netscan and searches for all connected 
+ devices. A window opens with a table in it. On the right side RACE lists 
+ all devices that it finds during the netscan. After RACE found all devices 
+ and added them to your project, you will be asked if the data from the 
+ units should be read from to the real world units.</p>
+
+<p><!--kadov_tag{{<spaces>}}-->&nbsp;<!--kadov_tag{{</spaces>}}--><img src="pics/GoingOnlineRead.png" style="border: none;
+			width: 293px;
+			height: 236px;
+			border-style: none;
+			border-style: none;" width="293" height="236" border="0"></p>
+
+<p>If you choose <span style="font-style: italic;">OK </span>RACE will 
+ read all the settings (including the program) and go online. If you choose 
+ <span style="font-style: italic;">Cancel</span> RACE will stay off-line.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>If a device has not been found it can have one of the following reasons:</p>
+
+<ul style="list-style: disc;"
+	type=disc>
+	
+	<li class=kadov-p><p>The device is switched off</p></li>
+	
+	<li class=kadov-p><p>The RS-485 wiring to that device is not good (e.g. 
+ a bad cable)</p></li>
+	
+	<li class=kadov-p><p>Your cable length is too long (there is a maximum 
+ of 1200 meters)</p></li>
+	
+	<li class=kadov-p><p>You have two devices running with the same RS-485 
+ Device ID.</p></li>
+</ul>
+
+</body>
+
+</html>

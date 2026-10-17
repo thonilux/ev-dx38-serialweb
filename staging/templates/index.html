@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151914">
+  <title>RACE | Dx38 Control</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='console.css') }}">
+  <script src="{{ url_for('static', filename='console.js') }}" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="RACE staging home"><span class="brand-mark">R</span><span>RACE <small>REMOTE CONTROL</small></span></a>
+    <div class="connection"><span id="connection-dot" class="dot"></span><span id="connection-label">Checking device</span><span class="divider">/</span><span class="environment">STAGING · OFFLINE SAFE</span></div>
+    <button class="icon-button" id="refresh" type="button" aria-label="Refresh device state" title="Refresh">↻</button>
+  </header>
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow">DIGITAL SOUND PROCESSOR <span>•</span> CONTROL SURFACE</p><h1>Output console<span class="accent">.</span></h1><p class="subhead">A clean control room for your Dx38. Hardware writes are disabled in this staging build.</p></div>
+      <div class="device-card"><span class="device-label">DEVICE</span><strong id="device-name">EV Dx38</strong><span id="updated-at">Waiting for state…</span></div>
+    </section>
+    <section class="toolbar"><div><span class="section-kicker">OUTPUTS</span><span class="section-title">Channel control</span></div><span class="offline-pill"><span class="dot"></span> STAGING MODE</span></section>
+    <section class="channels" id="channels" aria-label="Output channels"></section>
+    <footer><span>RACE STAGING CONSOLE</span><span>Changes are held in memory only · Not written to hardware</span></footer>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

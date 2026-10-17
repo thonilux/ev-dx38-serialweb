@@ -1,0 +1,22 @@
+# Auto-detect text files and normalize line endings to LF
+* text=auto eol=lf
+
+# Explicitly ensure Windows scripts keep CRLF if needed
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary files - prevent Git from touching or corrupting
+*.exe binary
+*.dll binary
+*.chm binary
+*.hlp binary
+*.cnt binary
+*.brs binary
+*.hhc binary
+*.hhk binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary

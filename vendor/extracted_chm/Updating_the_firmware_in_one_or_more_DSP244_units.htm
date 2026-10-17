@@ -1,0 +1,73 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<!--(==============================================================)-->
+<!--(Document created with RoboEditor. )============================-->
+<!--(==============================================================)-->
+
+<head>
+
+<title>Updating the firmware in one or more Dx38 units</title>
+
+<!--(Meta)==========================================================-->
+
+<meta http-equiv=content-type content="text/html; charset=windows-1252">
+<meta name=generator content="RoboHELP by eHelp Corporation - www.ehelp.com">
+<meta name=generator-major-version content=0.1>
+<meta name=generator-minor-version content=1>
+<meta name=filetype content=kadov>
+<meta name=filetype-version content=1>
+<meta name=page-count content=1>
+<meta name=layout-height content=936>
+<meta name=layout-width content=1222>
+<meta name=x-ignored-words content="Readme;readme;Crossmax;netscan;button(s;device(s;os">
+
+
+<!--(Links)=========================================================-->
+
+<link rel="StyleSheet" href="IRIS.CSS">
+
+
+
+</head>
+
+<!--(Body)==========================================================-->
+
+
+<body>
+
+<h2>Updating the firmware in one or more Dx38 units</h2>
+
+<p>Before your Dx38 can transmit or receive data using the RS-485 interface, 
+ you need to send an updated version of Dx38 firmware (Version 2.00 or 
+ higher) to your devices. This can be done using either RS-232 or RS-485. 
+ The RS-232 firmware update is described in the Readme file. </p>
+
+<p>A RS-485 firmware update only works, if your actual firmware version 
+ is at least V2.00. If it is not, you must use RS-232 to perform the firmware 
+ update. The following paragraph describes the RS-485 firmware update. 
+ </p>
+
+<p>To perform it, make all connections and settings as described in the 
+ readme file. Then choose <span style="font-style: italic;">Remote </span>&gt; 
+ <span style="font-style: italic;">Update Firmware </span>&gt; <span style="font-style: italic;">RS-485</span> 
+ from the menu. RACE will perform a netscan. Now you can see a list of 
+ all detected devices with their actual firmware versions. By clicking 
+ on appropriate button(s), you can select the device(s) to receive new 
+ firmware versions. If there are no detected devices, you can send a new 
+ firmware anyway (in that case RACE will try to send a new firmware to 
+ all devices connected on RS-485). </p>
+
+<p>You can now browse for the firmware file, which came with RACE. It can 
+ be found in the folder RACE/os. Open this file by double-clicking it. 
+ The transfer will begin automatically. Note that the displays of the receiving 
+ devices will be empty while the file is transferred. <!--kadov_tag{{<spaces>}}-->&nbsp;<!--kadov_tag{{</spaces>}}-->After 
+ the firmware is transferred, RACE will perform a new netscan, and you 
+ will see results of sending firmware in appropriate dialog-box. In the 
+ event of a problem with the firmware update, please refer to the Readme 
+ file for further instructions. </p>
+
+</body>
+
+</html>
